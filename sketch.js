@@ -32,6 +32,7 @@ function setup() {
 
 function touchStarted() {
   score = 49
+  uhOhIsPlaying = false
   print("Touched", getAudioContext().state)
   if (getAudioContext().state !== 'running') {
     getAudioContext().resume();
@@ -40,6 +41,7 @@ function touchStarted() {
 
 function mousePressed() {
   score = 49
+  uhOhIsPlaying = false
   print("Clicked", getAudioContext().state)
   if (getAudioContext().state !== 'running') {
     getAudioContext().resume();

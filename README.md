@@ -1,4 +1,7 @@
 # stupidcursorgame
-Just a game. You won't win!
+Life is just a game. You won't win. We know that already.
 
-Testing, testing...
+Tom Smith. http://everythingability.com
+
+
+
