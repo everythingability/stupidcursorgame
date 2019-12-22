@@ -28,11 +28,13 @@ function setup() {
   imageMode(CENTER)
 
 
+
 }
 
 function touchStarted() {
   score = 49
   uhOhIsPlaying = false
+    noCursor();
   print("Touched", getAudioContext().state)
   if (getAudioContext().state !== 'running') {
     getAudioContext().resume();
@@ -41,6 +43,7 @@ function touchStarted() {
 
 function mousePressed() {
   score = 49
+    noCursor();
   uhOhIsPlaying = false
   print("Clicked", getAudioContext().state)
   if (getAudioContext().state !== 'running') {
@@ -84,6 +87,8 @@ function draw() {
       }
     } else {
       snd.stop()
+      cursor(ARROW)
+
       background("red")
       fill("white")
       text("YOU LOSER!", width / 2, height / 2)
